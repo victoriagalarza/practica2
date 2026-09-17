@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visor 3D interactivo con información de objetos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Menú Lateral / Panel de Control UI -->
+    <div class="sidebar">
+        <h2>🌌 Sistema Solar 3D</h2>
+        <p class="subtitle">Visor Educativo Interactivo</p>
+        
+        <div class="control-group">
+            <button id="btn-anim">⏸️ Pausar Animación</button>
+            <button id="btn-reset-cam">🎥 Reiniciar Cámara</button>
+            <button id="btn-toggle-model">🛰️ Ocultar/Mostrar Satélite</button>
+            <button id="btn-color">🎨 Cambiar Color de Anillos</button>
+        </div>
+
+        <div class="control-group">
+            <label for="light-intensity">💡 Intensidad del Sol:</label>
+            <input type="range" id="light-intensity" min="0.2" max="3" step="0.1" value="1.5">
+        </div>
+    </div>
+
+    <!-- Panel Informativo desplegable al hacer clic -->
+    <div id="info-panel" class="info-panel">
+        <h3 id="info-title">Selecciona un objeto</h3>
+        <p><strong>Tipo:</strong> <span id="info-type">-</span></p>
+        <p><strong>Descripción:</strong> <span id="info-desc">Haz clic en cualquier planeta o estructura para ver sus datos.</span></p>
+        <p><strong>Dato Extra:</strong> <span id="info-extra">-</span></p>
+    </div>
+
+    <!-- Etiqueta Flotante (Tooltip) al pasar el mouse -->
+    <div id="tooltip" class="tooltip"></div>
+
+    <!-- Configuración del Import Map -->
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+            }
+        }
+    </script>
+    <script type="module" src="main.js"></script>
+</body>
+</html>

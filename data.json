@@ -1,0 +1,27 @@
+{
+  "Sol": {
+    "tipo": "Estrella",
+    "descripcion": "El centro de nuestro sistema solar. Concentra el 99.86% de la masa total.",
+    "datoAdicional": "Temperatura nuclear: ~15,000,000 °C | Diámetro: 1.39 millones de km"
+  },
+  "Tierra": {
+    "tipo": "Planeta Rocoso",
+    "descripcion": "El único cuerpo celeste conocido que alberga vida y agua líquida superficial.",
+    "datoAdicional": "Distancia al Sol: 1 UA (149.6M km) | Período orbital: 365.25 días"
+  },
+  "Saturno": {
+    "tipo": "Gigante Gaseoso",
+    "descripcion": "Famoso por su extenso y brillante sistema de anillos compuestos de hielo y roca.",
+    "datoAdicional": "Número de lunas: >140 | Ancho de anillos: ~282,000 km"
+  },
+  "OrbitaEspecial": {
+    "tipo": "Estructura Orbital (Cubo)",
+    "descripcion": "Zona delimitada de observación donde se monitorean satélites artificiales.",
+    "datoAdicional": "Categoría: Baliza espacial sintética para calibración de telescopios"
+  },
+  "SateliteISS": {
+    "tipo": "Modelo 3D Externo (.glb)",
+    "descripcion": "Sonda de exploración e investigación robótica en órbita heliocéntrica.",
+    "datoAdicional": "Sistemas principales: Paneles solares, transmisor de alta ganancia"
+  }
+}
